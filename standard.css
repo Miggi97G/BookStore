@@ -3,3 +3,19 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body{
+    display: grid;
+}
+
+.title{
+    border: 10px;
+    border-color: red;
+    border-width: 5px;
+border-style: solid;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}

@@ -1,44 +1,52 @@
-.bookContent {
+.book_content {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     border: thin solid;
-    padding: 0.5em;
-    margin: 10px;
-    flex-direction: column;
+    padding: 1.5em;
+    max-width: 500px;
+    margin: 16px;
 }
 
 .bookTitle{
     display: flex;
-    border-radius: 10px;
-    border: thin solid;
     justify-content: center;
+    border-bottom: 1px dotted red;
+}
+
+.imgContent{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(163, 247, 250);
 }
 
 .bookAuthor{
-
-}
-
-.bookLikes{
-
-}
-
-.bookLiked{
-
+    margin: 10px;
+    border-bottom: 1px dotted red;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .bookPrice{
-
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
-.bookPublishedYear{
-
+.bookLikes{
+   
 }
 
-.bookGenre{
-
+.bookLiked{
+    display: flex;
+    margin: 10px;
+    border-bottom: 1px dotted red;
+    justify-content: center;
 }
 
 .bookComments{
-    
+    display: flex;
+    margin: 10px;
+    border-bottom: 1px dotted red;
+    justify-content: center;
 }

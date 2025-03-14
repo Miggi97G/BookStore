@@ -11,14 +11,17 @@ function renderBooks() {
 
 function getBookTemplate(book, indexBook) {
   return `
-    <div class="bookContent">
-    <div class="bookTitle">${book.name}</div>
-    <div class="bookAuthor">${book.author}</div>
-    <div class="bookLikes">${book.likes}</div>
+    <div class="book_content">
+    <div class="bookTitle"><h1>${book.name}</h1></div>
+    <div class="imgContent"><img src="./img/book.jpeg" alt=""></div>
+    <div class="bookPrice"><h2><p>Price ${book.price}</p></h2>Likes${book.likes}</div>
+    <div class="bookAuthor">
+    <p>${book.author}</p>
+    <p>${book.genre}</p>
+    <p>${book.publishedYear}</p>
+    </div>
+    <div class="bookLikes"></div>
     <div class="bookLiked">${book.liked}</div>
-    <div class="bookPrice">${book.price}</div>
-    <div class="bookPublishedYear">${book.publishedYear}</div>
-    <div class="bookGenre">${book.genre}</div>
     <div class="bookComments">${book.comments}</div>
     </div>
   `;
