@@ -1,0 +1,44 @@
+.bookContent {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: thin solid;
+    padding: 0.5em;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.bookTitle{
+    display: flex;
+    border-radius: 10px;
+    border: thin solid;
+    justify-content: center;
+}
+
+.bookAuthor{
+
+}
+
+.bookLikes{
+
+}
+
+.bookLiked{
+
+}
+
+.bookPrice{
+
+}
+
+.bookPublishedYear{
+
+}
+
+.bookGenre{
+
+}
+
+.bookComments{
+    
+}
