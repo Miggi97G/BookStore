@@ -1,52 +1,92 @@
 .book_content {
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column; /* Elemente untereinander anordnen */
+    justify-content: flex-start; /* Am Anfang des Containers ausrichten */
+    align-items: center; /* Horizontal zentrieren */
     border-radius: 10px;
-    border: thin solid;
-    padding: 1.5em;
-    max-width: 500px;
-    margin: 16px;
+    border: 1px solid #ddd; /* Etwas dezenterer Rahmen */
+    padding: 20px; /* Mehr Innenabstand */
+    max-width: 600px; /* Etwas breiter */
+    margin: 20px auto; /* Zentrieren und mehr Außenabstand */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+    background-color: #f8f8f8; /* Leichter Hintergrund */
 }
 
-.bookTitle{
+.bookTitle {
     display: flex;
     justify-content: center;
-    border-bottom: 1px dotted red;
+    border-bottom: 1px solid #eee; /* Dezenterer Trennstrich */
+    padding-bottom: 10px; /* Abstand zum nächsten Element */
+    width: 100%; /* Volle Breite */
+    margin-bottom: 10px;
 }
 
-.imgContent{
+.imgContent {
     display: flex;
     justify-content: center;
-    background-color: rgb(163, 247, 250);
+    background-color: #e0f2f7; /* Hellere Farbe */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.bookAuthor{
-    margin: 10px;
-    border-bottom: 1px dotted red;
+.bookAuthor {
+    margin: 10px 0; /* Oben und unten Abstand */
+    border-bottom: 1px solid #eee; /* Dezenterer Trennstrich */
     justify-content: flex-start;
     flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
-.bookPrice{
+.bookPrice {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: 10px 0;
+    align-items: center;
+    width: 100%;
 }
 
-.bookLikes{
-   
+.bookLikes {
+    /* Keine spezifischen Stile */
 }
 
-.bookLiked{
+.bookLiked {
     display: flex;
-    margin: 10px;
-    border-bottom: 1px dotted red;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee; /* Dezenterer Trennstrich */
     justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
-.bookComments{
-    display: flex;
-    margin: 10px;
-    border-bottom: 1px dotted red;
-    justify-content: center;
+.bookComments {
+    overflow-y: auto;
+    max-height: 60vh;
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.commentsContent {
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Leichte Hintergrundfarbe für die Kommentarbox */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Etwas stärkerer Schatten */
+    margin-top: 10px;
+}
+
+.commentContent {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
 }
