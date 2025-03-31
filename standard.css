@@ -61,18 +61,6 @@ img{
     border-color: #aaa;
 }
 
-.likeButton .material-symbols-outlined {
-    font-size: 24px;
-    color: #666;
-    transition: color 0.2s ease-in-out, font-variation-settings 0.2s ease-in-out;
-}
-
-.likeButton.liked .material-symbols-outlined {
-    color: red;
-    font-variation-settings: 'FILL' 1;
-}
-
-
 /* Comment Input Styles */
 .addComment {
     display: flex;
@@ -125,4 +113,22 @@ img{
     color: #555;
 }
 
+@media (max-width: 630px) {
+    .title {
+        width: 100%;
+        font-size: 2.5em; /* Reduce title size */
+        margin: 15px auto; /* Reduce margin */
+        padding: 8px 16px; /* Reduce padding */
+    }
+    .addComment {
+        flex-direction: column; /* Stack inputs and button vertically */
+        align-items: stretch; /* Stretch items to full width */
+    }
+    .addComment input[type="text"] {
+        width: 100%;
+    }
+    .addComment button {
+        width: 100%;
+    }
+}
 
